@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
     padding: 0;
     margin: 0;
 }
@@ -7,33 +7,30 @@
 header{
     margin: 0px;
     padding: 0px;
-    display: flex;
-
     background-color: orchid;
 
 }
 nav{
-    margin-right: 10px;
-    display: block;
-    align-content: flex-end;
-
+    float: right;
+    margin-top: -20px;
+    margin-right: 20px;
 }
 nav ul{
-
     list-style-type: none;
 }
 
-nav ul li{
+nav li{
     margin-left: 25px ;
-    display: inline-block;
-    
+    display: inline-block;   
 }
+
+
 header h2{
     width: fit-content;
     color: red;
     background-color: yellow;
-}
 
+}
 
 header figure{
     display: none;
