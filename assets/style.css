@@ -1,20 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 header{
+    margin: 0px;
+    padding: 0px;
     display: flex;
+
     background-color: orchid;
 
 }
+nav{
+    margin-right: 10px;
+    display: block;
+    align-content: flex-end;
 
+}
+nav ul{
+
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-left: 25px ;
+    display: inline-block;
+    
+}
 header h2{
+    width: fit-content;
     color: red;
     background-color: yellow;
 }
 
-header h3{
+
+header figure{
     display: none;
 }
+
+
 .gridcontainer{
     display: grid;
-    grid-template-columns:30% 65%;
+    grid-template-columns:30% 70%;
     grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
     
 }
@@ -70,31 +98,63 @@ footer h4{
     background-color: green;
 
 }
-@media (max-width:750px){
+@media screen and (max-width:768px){
+    
     header h2{
     display:none;}
-    header h3{
+    
+    header figure{
     display: flex;
     background-color: green;
     color: brown;
     }
     
+    .gridcontainer{
+        grid-template-columns: 100%;
+        grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
+        
+    }
+    header nav{
+        display: none;
+    }
+    .buttlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .imgbutt{
+        max-width: 28%;
+        justify-content: space-between;
+    }
+    
     .containerL{
         display: none;
     }
+    .containerR{
+        justify-self: center;
+        
+        border:5px solid orange;
+        background-color: gray;
+    }
+    
+
     .containerR-1{
+       
         width: 100%;
         min-height: 100px;
+      
     }
     .containerR-2{
+        
         width: 100%;
         min-height: 100px;
     }
     .containerR-3{
+        
         width: 100%;
         min-height: 100px;
     }
 
-
 }
+
     
