@@ -1,7 +1,21 @@
+header{
+    display: flex;
+    background-color: orchid;
+
+}
+
+header h2{
+    color: red;
+    background-color: yellow;
+}
+
+header h3{
+    display: none;
+}
 .gridcontainer{
     display: grid;
-    grid-template-columns:30% 65% ;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns:30% 65%;
+    grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
     
 }
 .containerL{
@@ -44,3 +58,43 @@
     min-width: 50px;
     min-height: 100px;
 }
+
+footer{
+    display: flex;
+    background-color: orchid;
+
+}
+
+footer h4{
+    color: brown;
+    background-color: green;
+
+}
+@media (max-width:750px){
+    header h2{
+    display:none;}
+    header h3{
+    display: flex;
+    background-color: green;
+    color: brown;
+    }
+    
+    .containerL{
+        display: none;
+    }
+    .containerR-1{
+        width: 100%;
+        min-height: 100px;
+    }
+    .containerR-2{
+        width: 100%;
+        min-height: 100px;
+    }
+    .containerR-3{
+        width: 100%;
+        min-height: 100px;
+    }
+
+
+}
+    
